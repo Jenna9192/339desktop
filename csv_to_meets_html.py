@@ -94,7 +94,9 @@ def csv_to_html(csv_filename, output_folder):
                     </div>"""
                     html_content += """</section>\n
                     <section id="individual-results">\n
-                    <h2>Individual Results</h2>"""
+                    <h2>Individual Results</h2>\n
+                    <div class = "athlete-container">\n"""
+
 
                 place = row[0]
                 grade = row[1]
@@ -125,7 +127,8 @@ def csv_to_html(csv_filename, output_folder):
 </div>
 """
 
-        html_content += """</section>\n
+        html_content += """</div>\n
+        </section>\n
         <section id = "gallery">
         <h2>Gallery</h2>
         """

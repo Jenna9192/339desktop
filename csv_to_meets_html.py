@@ -225,12 +225,18 @@ def select_random_photos(folder_path, num_photos=25):
     return random.sample(image_files, num_photos)
 
 # Step 3: Generate HTML image tags
-def generate_image_tags(image_files, folder_path):
+def generate_image_tags(image_files, folder_path, gallery):
     img_tags = []
     for img in image_files:
         img_path = os.path.join(folder_path, img)
         # print(f"The image_path is {img_path}")
-        img_tags.append(f'<img src=../{img_path} alt="">')
+        if gallery:
+            tag = f'<a href="../{img_path}" target="_blank" data-lightbox="meet">\n'
+            tag += f'<img src=../{img_path} alt="">'
+            tag += '</a>'
+            img_tags.append(tag)
+        else:
+            img_tags.append(f'<img src=../{img_path} alt="">')
     return "\n".join(img_tags)
 
 # Putting it all together
@@ -249,7 +255,7 @@ def create_meet_image_gallery(url):
     selected_photos = select_random_photos(folder_path)
     
     # Generate image tags
-    html_image_tags = generate_image_tags(selected_photos, folder_path)
+    html_image_tags = generate_image_tags(selected_photos, folder_path, True)
     
     return html_image_tags
 

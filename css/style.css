@@ -228,10 +228,10 @@ footer a{
 }
 
 /* style atheete results section */
-#athlete-container {
+.athlete-container {
     display: grid;
     grid-template-columns: 95vw; /*one column to optimize for mobile*/
-    justify-content: space-around;
+    justify-content: center;
     perspective: 600;
 }
 
@@ -369,15 +369,21 @@ dt {
     }
     footer, nav{
         margin: -50px -50px;
+        padding: 50px;
     }
     nav ul{
         display: flex;
         margin: 0;
         padding:0;
-        
+        font-size: 20px;
     }
+    nav ul li{
+        padding:10px;
+    }
+
     header, #team-results{
         margin: 20px -50px;
+        padding: 50px;
     }
 
     header h2{
@@ -392,17 +398,63 @@ dt {
     }
 
     #individual-results .athlete{
-        width: 300px;
+        width: auto;
     }
 
     .athlete img {
-        height: 350px;
+        height: 80%;
     }
     #gallery{
         grid-template-columns: repeat(3,1fr);
         margin: 20px;
     }
+}
 
+@media(min-width: 1050px){
+    body{
+        margin: 100px;
+        font-size: 28px;
+    }
+    footer, nav{
+        margin: -100px;
+        padding: 30px 100px;
+    }
+    nav ul{
+        display: flex;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    nav ul li {
+        padding-right: 20px;
+    }
+
+    header, #team-results{
+        margin: 70px -100px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    h1{
+        font-size: 56px;
+    }
+
+    .athlete-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto; /*one column to optimize for mobile*/
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+
+    .athlete img {
+        height: 75%;
+    }
+    #gallery{
+        grid-template-columns: repeat(4,1fr);
+        margin-bottom: 80px;
+        gap: 30px;
+    }
 }
 
 

@@ -82,9 +82,9 @@ def csv_to_html(csv_filename, output_folder):
                 # Add rows with a collapsible class for rows beyond the first 10
                 
                 if row[0] == "Place":
-                    html_content += f"<thead><tr><th>{row[0]}</th><th>{row[1]}</th><th>{row[2]}</th></tr></thead>\n"
+                    html_content += f"""<thead tabindex="0"><tr><th>{row[0]}</th><th>{row[1]}</th><th>{row[2]}</th></tr></thead>\n"""
                 else:
-                    html_content += f"<tr><td>{row[0]}</td><td>{row[1]}</td><td> {row[2]}</td></tr>\n"
+                    html_content += f"""<tr tabindex="0"><td>{row[0]}</td><td>{row[1]}</td><td> {row[2]}</td></tr>\n"""
 
             # For rows that are 8 columns wide and contain 'Ann Arbor Skyline' in column 6
             elif len(row) == 8 and row[5].strip().lower() == 'ann arbor skyline':
@@ -106,7 +106,7 @@ def csv_to_html(csv_filename, output_folder):
 
                 # Add the athlete div
                 html_content += f"""
-                                <div class="athlete">
+                                <div class="athlete" tabindex="0">
                                 <figure> 
                                 <img src="../images/profiles/{profile_pic}" alt="Profile picture of {name}"> """
                 # if check_image_exists(profile_pic):

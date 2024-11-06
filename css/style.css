@@ -52,8 +52,8 @@ ul li a {
 }
 
 /* for all when focus draw an orange box around it */
-:focus{
-    border: 2px solid #FE763A;
+*:focus{
+    border: 5px solid #FE763A;
 }
 
 /* focus on skip to main content only when you tab into it else don't show */
@@ -159,7 +159,7 @@ doesn't take up a lot of space */
 }
 
 tr:focus{
-    border: 2px solid var(--text-color);
+    border: 10px solid var(--text-color);
 }
 
 td{
@@ -203,7 +203,9 @@ table{
     transition-timing-function: linear;
 }
 
-#individual-results .athlete:hover{
+#individual-results .athlete:hover,
+#individual-results .athlete:focus{
+    border: 5px #FF5722 solid;
     opacity: 1;
 }
 
@@ -297,9 +299,11 @@ dt {
 }
 
 /* increase opacity of image when it is hover */
-#gallery img:hover{
+#gallery img:hover,
+#gallery img:focus {
     opacity: 1;
     transform: scale(1.1); /* Zoom in by 10% */
+    outline: none;  /* Optional: removes the default focus outline */
 }
 
 /* reduce animations for preferred users */

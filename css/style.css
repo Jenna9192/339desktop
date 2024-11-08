@@ -209,6 +209,11 @@ table{
     opacity: 1;
 }
 
+/* style filter */
+label{
+    color: var(--text-color);
+}
+
 /* style footer */
 footer{
     border-top-left-radius: 50px;
@@ -442,6 +447,7 @@ dt {
         margin: 0px -100px -100px -100px;
         padding: 30px 100px;
     }
+
     nav ul{
         font-size: 20px;
     }

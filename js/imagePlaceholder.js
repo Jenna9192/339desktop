@@ -3,7 +3,7 @@ document.querySelectorAll('img').forEach(img => {
     img.onerror = function(){
         this.onerror = null;
         this.src = '../js/placeholder-image.jpg';
-        this.alt = " "
+        this.alt = "missing profile picture"
     };
 });
 

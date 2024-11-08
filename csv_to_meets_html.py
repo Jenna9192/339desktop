@@ -223,16 +223,18 @@ def select_random_photos(folder_path, num_photos=25):
 # Step 3: Generate HTML image tags
 def generate_image_tags(image_files, folder_path, gallery):
     img_tags = []
+    i = 0
     for img in image_files:
         img_path = os.path.join(folder_path, img)
         # print(f"The image_path is {img_path}")
         if gallery:
             tag = f'<a href="../{img_path}" target="_blank" data-lightbox="meet">\n'
-            tag += f'<img src=../{img_path} alt="meet pic at competition">'
+            tag += f'<img src=../{img_path} alt="meet pic {i}">'
             tag += '</a>'
             img_tags.append(tag)
         else:
-            img_tags.append(f'<img src=../{img_path} alt="running pic">')
+            img_tags.append(f'<img src=../{img_path} alt="running pic {i}">')
+        i += 1
     return "\n".join(img_tags)
 
 # Putting it all together

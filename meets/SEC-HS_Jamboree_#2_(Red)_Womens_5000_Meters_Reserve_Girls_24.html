@@ -53,9 +53,25 @@
 
                     <h2>Individual Results</h2>
 
+                    <label for="grade-filter">Filter by Grade:</label>
+
+                    <select id="grade-filter" onchange="filterByGrade()">
+
+                        <option value="all">All Grades</option>
+
+                        <option value="9">Grade 9</option>
+
+                        <option value="10">Grade 10</option>
+
+                        <option value="11">Grade 11</option>
+
+                        <option value="12">Grade 12</option>
+
+                    </select>
+
                     <div class = "athlete-container">
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="10">
                                 <figure> 
                                 <img src="../images/profiles/24802677.jpg" alt="Profile picture of Gwen Stotts-Walshe"> 
     <figcaption>Gwen Stotts-Walshe</figcaption>
@@ -67,7 +83,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="9">
                                 <figure> 
                                 <img src="../images/profiles/26328683.jpg" alt="Profile picture of Violet Olley"> 
     <figcaption>Violet Olley</figcaption>
@@ -79,7 +95,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="11">
                                 <figure> 
                                 <img src="../images/profiles/21142907.jpg" alt="Profile picture of Adrienne Stewart"> 
     <figcaption>Adrienne Stewart</figcaption>
@@ -91,7 +107,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="10">
                                 <figure> 
                                 <img src="../images/profiles/26328678.jpg" alt="Profile picture of Pia Odell"> 
     <figcaption>Pia Odell</figcaption>
@@ -103,7 +119,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="10">
                                 <figure> 
                                 <img src="../images/profiles/23349715.jpg" alt="Profile picture of Ruthie Scott"> 
     <figcaption>Ruthie Scott</figcaption>
@@ -115,7 +131,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="12">
                                 <figure> 
                                 <img src="../images/profiles/23687880.jpg" alt="Profile picture of Julianna Heung"> 
     <figcaption>Julianna Heung</figcaption>
@@ -127,7 +143,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="11">
                                 <figure> 
                                 <img src="../images/profiles/22520388.jpg" alt="Profile picture of Elsa Wenzlaff"> 
     <figcaption>Elsa Wenzlaff</figcaption>
@@ -139,7 +155,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="9">
                                 <figure> 
                                 <img src="../images/profiles/26328689.jpg" alt="Profile picture of Calla Sopoci"> 
     <figcaption>Calla Sopoci</figcaption>
@@ -151,7 +167,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="12">
                                 <figure> 
                                 <img src="../images/profiles/21142908.jpg" alt="Profile picture of Alexandra Wren"> 
     <figcaption>Alexandra Wren</figcaption>
@@ -163,7 +179,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="12">
                                 <figure> 
                                 <img src="../images/profiles/18895017.jpg" alt="Profile picture of Vera Naines"> 
     <figcaption>Vera Naines</figcaption>
@@ -175,7 +191,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="11">
                                 <figure> 
                                 <img src="../images/profiles/22520376.jpg" alt="Profile picture of Emily Mei"> 
     <figcaption>Emily Mei</figcaption>
@@ -187,7 +203,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="11">
                                 <figure> 
                                 <img src="../images/profiles/22520342.jpg" alt="Profile picture of Tia Cocciolone"> 
     <figcaption>Tia Cocciolone</figcaption>
@@ -199,7 +215,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="10">
                                 <figure> 
                                 <img src="../images/profiles/23349724.jpg" alt="Profile picture of Katie Yuan"> 
     <figcaption>Katie Yuan</figcaption>
@@ -211,7 +227,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="11">
                                 <figure> 
                                 <img src="../images/profiles/23564883.jpg" alt="Profile picture of Arabella Kessler"> 
     <figcaption>Arabella Kessler</figcaption>
@@ -223,7 +239,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="10">
                                 <figure> 
                                 <img src="../images/profiles/24802883.jpg" alt="Profile picture of LeAnne Fayyad"> 
     <figcaption>LeAnne Fayyad</figcaption>
@@ -235,7 +251,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="9">
                                 <figure> 
                                 <img src="../images/profiles/26322051.jpg" alt="Profile picture of Livi Byers"> 
     <figcaption>Livi Byers</figcaption>
@@ -247,7 +263,7 @@
 </dl>
 </div>
 
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="11">
                                 <figure> 
                                 <img src="../images/profiles/21142897.jpg" alt="Profile picture of Cecilia DeGuzman"> 
     <figcaption>Cecilia DeGuzman</figcaption>
@@ -264,56 +280,56 @@
 
         <section id = "gallery">
         <h2>Gallery</h2>
-        <a href="../images/meets/235827/IMG_9019.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9019.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9024.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9024.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_20240829_171701146.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_20240829_171701146.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9026.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9026.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9032.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9032.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9018.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9018.jpg alt=""></a>
+        <a href="../images/meets/235827/IMG_9039.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9039.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_9023.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_9023.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9051.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9051.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9037.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9037.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_9035.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_9035.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_20240829_171709091.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_20240829_171709091.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_20240829_171731303.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_20240829_171731303.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9024.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9024.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_9033.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_9033.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9038.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9038.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9045.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9045.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9022.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9022.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_20240829_171701146.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_20240829_171701146.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_8984.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_8984.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9032.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9032.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_9034.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_9034.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_9036.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_9036.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9037.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9037.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9050.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9050.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9049.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9049.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9025.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9025.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9031.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9031.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9038.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9038.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_8973.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_8973.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_9043.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_9043.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9039.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9039.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9049.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9049.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_8984.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_8984.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9031.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9031.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_9030.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_9030.jpg alt=""></a>
 <a href="../images/meets/235827/IMG_8974.jpg" target="_blank" data-lightbox="meet">
 <img src=../images/meets/235827/IMG_8974.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_9025.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_9025.jpg alt=""></a>
-<a href="../images/meets/235827/IMG_20240829_171709091.jpg" target="_blank" data-lightbox="meet">
-<img src=../images/meets/235827/IMG_20240829_171709091.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9026.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9026.jpg alt=""></a>
+<a href="../images/meets/235827/IMG_9018.jpg" target="_blank" data-lightbox="meet">
+<img src=../images/meets/235827/IMG_9018.jpg alt=""></a>
    </section>
    </main>   
    <footer>
@@ -328,13 +344,7 @@
 
 
                      </footer>
-        <script>
-            function myFunction() {
-                var element = document.body;
-                element.classList.toggle("dark-mode");
-            }
-        </script>
-        <script src="../dist/js/lightbox-plus-jquery.js"></script>
         <script src ="../js/imagePlaceholder.js"></script>
+        <script src="../dist/js/lightbox-plus-jquery.js"></script>
         </body>
 </html>

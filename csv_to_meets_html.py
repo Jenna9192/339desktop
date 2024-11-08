@@ -95,6 +95,14 @@ def csv_to_html(csv_filename, output_folder):
                     html_content += """</section>\n
                     <section id="individual-results">\n
                     <h2>Individual Results</h2>\n
+                    <label for="grade-filter">Filter by Grade:</label>\n
+                    <select id="grade-filter" onchange="filterByGrade()">\n
+                        <option value="all">All Grades</option>\n
+                        <option value="9">Grade 9</option>\n
+                        <option value="10">Grade 10</option>\n
+                        <option value="11">Grade 11</option>\n
+                        <option value="12">Grade 12</option>\n
+                    </select>\n
                     <div class = "athlete-container">\n"""
 
 
@@ -106,15 +114,9 @@ def csv_to_html(csv_filename, output_folder):
 
                 # Add the athlete div
                 html_content += f"""
-                                <div class="athlete" tabindex="0">
+                                <div class="athlete" tabindex="0" data-grade="{grade}">
                                 <figure> 
                                 <img src="../images/profiles/{profile_pic}" alt="Profile picture of {name}"> """
-                # if check_image_exists(profile_pic):
-                #     html_content += f"""
-                #     <img src="../images/profiles/{profile_pic}" alt="Profile picture of {name}"> """
-                # else:
-                #     html_content += f"""
-                #     <img src="../images/default_image.jpg" alt="Profile picture of {name}"> """
 
                 html_content += f"""
     <figcaption>{name}</figcaption>
@@ -150,14 +152,8 @@ def csv_to_html(csv_filename, output_folder):
 
 
                      </footer>
-        <script>
-            function myFunction() {
-                var element = document.body;
-                element.classList.toggle("dark-mode");
-            }
-        </script>
-        <script src="../dist/js/lightbox-plus-jquery.js"></script>
         <script src ="../js/imagePlaceholder.js"></script>
+        <script src="../dist/js/lightbox-plus-jquery.js"></script>
         </body>
 </html>
 """

@@ -354,6 +354,7 @@ dt {
     --text-highlight: var(--dark-text-highlight);
 }
 
+/* user color scheme preference */
 @media (prefers-color-scheme: dark) {
     :root {
         --background-color: var(--dark-background-color);
@@ -366,7 +367,10 @@ dt {
     }
 }
 
+
+/* for when it is a tablet */
 @media(min-width: 768px){
+    /* increase margins to 50px */
     body{
         margin: 50px;
         font-size: 24px;
@@ -375,6 +379,8 @@ dt {
         margin: -50px -50px;
         padding: 50px;
     }
+
+    /* make nav horizontal */
     nav ul{
         display: flex;
         margin: 0;
@@ -394,6 +400,7 @@ dt {
         font-size: 30px;
     }
 
+    /* show two athletes in a grid */
     .athlete-container {
         display: grid;
         grid-template-columns: auto auto; /*one column to optimize for mobile*/
@@ -405,15 +412,17 @@ dt {
         width: auto;
     }
 
-    .athlete img {
+    .athlete figure img {
         height: 80%;
     }
+    /* increase grid to 3 columns */
     #gallery{
         grid-template-columns: repeat(3,1fr);
         margin: 20px;
     }
 }
 
+/* for when it is a desktop */
 @media(min-width: 1050px){
     body{
         margin: 100px;
@@ -424,8 +433,6 @@ dt {
         padding: 30px 100px;
     }
     nav ul{
-        display: flex;
-        margin: 0;
         font-size: 24px;
     }
 
@@ -443,6 +450,7 @@ dt {
         font-size: 56px;
     }
 
+    /* increase athelete grid to 4 columns */
     .athlete-container {
         display: grid;
         grid-template-columns: auto auto auto auto; /*one column to optimize for mobile*/
@@ -451,9 +459,11 @@ dt {
     }
 
 
-    .athlete img {
+    .athlete figure img {
         height: 75%;
     }
+
+    /* increase gallery grid to 4 columns */
     #gallery{
         grid-template-columns: repeat(4,1fr);
         margin-bottom: 80px;

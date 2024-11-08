@@ -228,11 +228,11 @@ def generate_image_tags(image_files, folder_path, gallery):
         # print(f"The image_path is {img_path}")
         if gallery:
             tag = f'<a href="../{img_path}" target="_blank" data-lightbox="meet">\n'
-            tag += f'<img src=../{img_path} alt="">'
+            tag += f'<img src=../{img_path} alt="meet pic at competition">'
             tag += '</a>'
             img_tags.append(tag)
         else:
-            img_tags.append(f'<img src=../{img_path} alt="">')
+            img_tags.append(f'<img src=../{img_path} alt="running pic">')
     return "\n".join(img_tags)
 
 # Putting it all together

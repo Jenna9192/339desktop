@@ -297,7 +297,7 @@ dt {
 }
 
 /* style gallery image*/
-#gallery img{
+#gallery a img{
     border-radius: 20px;
     width: 100%;
     opacity: 0.5;
@@ -305,8 +305,8 @@ dt {
 }
 
 /* increase opacity of image when it is hover */
-#gallery img:hover,
-#gallery img:focus {
+#gallery a img:hover,
+#gallery a img:focus {
     opacity: 1;
     transform: scale(1.1); /* Zoom in by 10% */
     outline: none;  /* Optional: removes the default focus outline */

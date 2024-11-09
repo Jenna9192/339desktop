@@ -417,10 +417,8 @@ dt {
 
     /* show two athletes in a grid */
     .athlete-container {
-        display: grid;
         grid-template-columns: auto auto; /*one column to optimize for mobile*/
-        justify-content: space-around;
-        gap: 20px;
+        gap: 20px; /*add gap between atheletes*/
     }
 
     #individual-results .athlete{
@@ -484,10 +482,7 @@ dt {
 
     /* increase athelete grid to 4 columns */
     .athlete-container {
-        display: grid;
         grid-template-columns: auto auto auto auto; /*one column to optimize for mobile*/
-        justify-content: space-around;
-        gap: 20px;
     }
 
     /* image to take up 75% of box */

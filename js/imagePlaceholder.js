@@ -1,3 +1,4 @@
+/* replace img that are not found with placeholder image*/
 document.querySelectorAll('img').forEach(img => {
     console.log("run")
     img.onerror = function(){
@@ -7,6 +8,7 @@ document.querySelectorAll('img').forEach(img => {
     };
 });
 
+/* filters atheltes by grade in the filter button*/
 function filterByGrade() {
     const selectedGrade = document.getElementById("grade-filter").value;
     const athletes = document.querySelectorAll(".athlete");
@@ -21,6 +23,7 @@ function filterByGrade() {
     });
 }
 
+/* add a dark mode toggle to allow user to switch between */
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
